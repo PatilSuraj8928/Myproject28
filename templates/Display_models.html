@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>SEE DATA HERE</h1>
+        
+        <table border="3px">
+            <tr>
+                <th>Sport</th>
+            </tr>
+            {% for T in Topic %}
+            <tr>
+                <td>{{T.Topic_name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <hr>
+        <hr>
+        <table border="3px">
+            <tr>
+                <th>Topic_name</th>
+                <th>Name</th>
+                <th>URL</th>
+            </tr>
+            {% for w in Webpage %}
+            <tr>
+                <td>{{w.Topic_name}}</td>
+                <td>{{w.Name}}</td>
+                <td>{{w.URL}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <hr>
+        <hr>
+        <table border="3px">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+            {% for A in Access %}
+            <tr>
+                <td>{{A.Name}}</td>
+                <td>{{A.Date}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+    </center>
+</body>
+</html>
